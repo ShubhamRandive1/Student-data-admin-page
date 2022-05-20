@@ -40,7 +40,7 @@ arr.map(function (element, index) {
 
 function removeItem(element, index) {
     console.log(element);
-    arr.pop();
+    arr.splice(index, 1);
     localStorage.setItem("Trash", JSON.stringify(arr));
     window.location.reload();
 }
